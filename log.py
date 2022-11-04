@@ -5,3 +5,12 @@ def timestamp(func):
 		print(time.ctime())
 		func()
 	return wrapper
+
+# @timestamp
+# def hi(): 
+# 	print('hi')
+
+# def main():
+# 	hi()
+	
+# main()
