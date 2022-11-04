@@ -1,7 +1,5 @@
-# TODO: there's code missing in one or more lines below 
 class Base:
     def __init__(self, x, y, size):
-	# TODO: will need to fill this in
 	    self.x = x
 	    self.y = y
 	    self.size = size
