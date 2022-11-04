@@ -1,0 +1,11 @@
+1. Yes (but only immediately, not permanently), the change inside increment_int_a changes the variable "a" after the function call as the value of 32 is incremented. So, when the function is called, we see the value of "a" as 33.
+
+2. Yes (permanently),  we see that once the function is called, we see the value of "b" as [33].
+
+3. Despite the similarity from #1 and #2 for both the functions, there is a key thing to note. Based on what input is sent to these functions, we might see something different AFTER the function call. For verification purposes, when I entered "print(increment_int_a(a))", I saw the output as 33, but when I entered "print(a)", I saw the original value of "a", which is 32.
+
+I did a similar check for "b". When I entered "print(increment_int_a(b))", the output was [33], and when I typed "print(b)", I still got the same output: [33]
+
+This is because ints are passed by value, so only the copies are sent to the function. This means that the function might immediately make changes to the passed in int input, but it won't permanently change the input's value.
+
+The list is passed by reference, so the function gas direct access to the passed in list. That's why, we see the list's values being permanently changed, even after we print it after calling the function.
